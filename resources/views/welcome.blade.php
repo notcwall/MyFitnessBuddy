@@ -3,8 +3,6 @@
     <head>
         <title>Laravel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
         <style>
             html, body {
                 height: 100%;
@@ -16,7 +14,6 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
             }
 
             .container {
@@ -26,19 +23,43 @@
             }
 
             .content {
-                text-align: center;
+                text-align: left;
                 display: inline-block;
             }
 
             .title {
                 font-size: 96px;
             }
+
+            #welcome{
+                border: solid;
+                border-width: 1px;
+                border-color: #BBBBBB;
+            }
+
+            #welcomeHeader{
+                background-color: #0088FF;
+                color: #DDDDDD;
+                padding: 5px;
+            }
+
+            #welcomeContent{
+                padding: 5px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div id="welcome">
+                    <div id="welcomeHeader">
+                        Welcome, Stranger!
+                    </div>
+                    <div id="welcomeContent">
+                        <a href="./login">Login</a> or <a href="./register">register</a> to get started.
+                    </div>
+                </div>
+                
             </div>
         </div>
     </body>
